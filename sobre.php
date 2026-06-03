@@ -10,66 +10,40 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+  
+<?php include 'includes/header.php'; ?>
 
-    <div class="container">
+<section class="container mt-5">
 
-        <a class="navbar-brand fw-bold" href="#">
-            ADALTO CELL
-        </a>
+    <h1 class="text-center">Quem Somos</h1>
 
-        <button class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#menu">
+    <p>
+        A Adalto CELL é uma loja especializada na venda de celulares,
+        acessórios e produtos de tecnologia.
+    </p>
 
-            <span class="navbar-toggler-icon"></span>
+    <p>
+        Trabalhamos com smartphones, fones de ouvido, caixas de som,
+        televisões e diversos produtos para atender nossos clientes.
+    </p>
 
-        </button>
+    <p>
+        Nosso objetivo é oferecer qualidade, confiança e um ótimo
+        atendimento.
+    </p>
 
-        <div class="collapse navbar-collapse" id="menu">
+</section>
 
-            <ul class="navbar-nav me-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php">Início</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="sobre.php">Sobre</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contato.php">Contato</a>
-                </li>
-
-            </ul>
-
-            <form class="d-flex">
-
-                <input class="form-control me-2"
-                       type="search"
-                       placeholder="Pesquisar">
-
-                <button class="btn btn-dark">
-                    Buscar
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</nav>
-
-<div class="text-center">
-
-<h1>Quem somos</h1>
-
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<footer class="bg-dark text-white text-center p-4">
+
+    <p>
+        © 2026 Adalto CELL - Todos os direitos reservados
+    </p>
+
+</footer>
 
 </body>
 </html>
