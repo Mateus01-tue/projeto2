@@ -32,7 +32,7 @@
 
                         <p>256GB • 12GB RAM</p>
 
-                        <a href="produto.php" class="btn btn-dark">
+                        <a href="SamsungS25.php" class="btn btn-dark">
                         Ver Produto
                           
                     </a>
@@ -58,7 +58,7 @@
 
                         <p>128GB • iOS</p>
 
-                        <a href="produto.php" class="btn btn-dark">
+                        <a href="produtos.php" class="btn btn-dark">
                         Ver Produto
                           
                     </a>
@@ -84,7 +84,7 @@
 
                         <p>256GB • Android</p>
 
-                        <a href="produto.php" class="btn btn-dark">
+                        <a href="motorola.php" class="btn btn-dark">
                         Ver Produto
                           
                     </a>
@@ -110,7 +110,7 @@
 
                         <p>256GB • 8GB RAM</p>
 
-                        <a href="produto.php" class="btn btn-dark">
+                        <a href="xiaomi.php" class="btn btn-dark">
                         Ver Produto
                           
                     </a>
@@ -138,7 +138,7 @@
 
         <div class="row mt-4">
 
-            <!-- Produto 1 -->
+            <!-- Produto 5 -->
             <div class="col-md-3">
 
                 <div class="card">
@@ -153,7 +153,7 @@
 
                         <p>50 Polegadas • 4K</p>
 
-                        <a href="produto.php" class="btn btn-dark">
+                        <a href="tv.php" class="btn btn-dark">
                         Ver Produto
                           
                     </a>
@@ -164,7 +164,7 @@
 
             </div>
 
-            <!-- Produto 2 -->
+            <!-- Produto 6 -->
             <div class="col-md-3">
 
                 <div class="card">
@@ -179,7 +179,7 @@
 
                         <p>Sem fio • Bluetooth</p>
 
-                        <a href="produto.php" class="btn btn-dark">
+                        <a href="fones.php" class="btn btn-dark">
                         Ver Produto
                           
                     </a>
@@ -190,7 +190,7 @@
 
             </div>
 
-            <!-- Produto 3 -->
+            <!-- Produto 7 -->
             <div class="col-md-3">
 
                 <div class="card">
@@ -205,7 +205,7 @@
 
                         <p>RGB • Mecânico</p>
 
-                        <a href="produto.php" class="btn btn-dark">
+                        <a href="teclado.php" class="btn btn-dark">
                         Ver Produto
                           
                     </a>
@@ -216,7 +216,7 @@
 
             </div>
 
-            <!-- Produto 4 -->
+            <!-- Produto 8 -->
             <div class="col-md-3">
 
                 <div class="card">
@@ -231,7 +231,7 @@
 
                         <p>Bluetooth • Portátil</p>
 
-                        <a href="produto.php" class="btn btn-dark">
+                        <a href="jbl.php" class="btn btn-dark">
                         Ver Produto
                           
                     </a>

@@ -17,6 +17,7 @@
     <div class="container">
 
         <a class="navbar-brand fw-bold" href="index.php">
+            <img src="imagens/logo.png" alt="Logo AdaltoCell" class="logo-header">
             ADALTO CELL
         </a>
 

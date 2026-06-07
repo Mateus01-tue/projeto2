@@ -7,70 +7,117 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="contato.css?v=1">
+
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+
+    <?php include 'includes/header.php'; ?>
+
+<section class="contato-container">
 
     <div class="container">
 
-        <a class="navbar-brand fw-bold" href="#">
-            ADALTO CELL
-        </a>
+        <h1 class="titulo">Entre em Contato</h1>
 
-        <button class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#menu">
+        <p class="subtitulo">
+            Estamos prontos para ajudar você a encontrar o produto ideal.
+        </p>
 
-            <span class="navbar-toggler-icon"></span>
+        <div class="row">
 
-        </button>
+            <div class="col-md-6">
 
-        <div class="collapse navbar-collapse" id="menu">
+                <div class="info-box">
 
-            <ul class="navbar-nav me-auto">
+                    <h3>Informações da Loja</h3>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php">Início</a>
-                </li>
+                    <p>
+                        📍 Rua Doutor Miguel Vieira Ferreira<br>
+                        Centro - Luiziana/PR
+                    </p>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="sobre.php">Sobre</a>
-                </li>
+                    <p>
+                        📞 (44) 99749-3842
+                    </p>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="contato.php">Contato</a>
-                </li>
+                    <p>
+                        🕒 Segunda a Sexta: 08h às 18h<br>
+                        🕒 Sábado: 08h às 12h
+                    </p>
 
-            </ul>
+                    <a href="https://wa.me/5544997493842"
+                       target="_blank"
+                       class="btn btn-success">
+                        Falar no WhatsApp
+                    </a>
 
-            <form class="d-flex">
+                </div>
 
-                <input class="form-control me-2"
-                       type="search"
-                       placeholder="Pesquisar">
+            </div>
 
-                <button class="btn btn-dark">
-                    Buscar
-                </button>
+            <div class="col-md-6">
 
-            </form>
+                <div class="form-box">
+
+                    <h3>Envie uma Mensagem</h3>
+
+                    <form>
+
+                        <input type="text"
+                               class="form-control mb-3"
+                               placeholder="Seu nome">
+
+                        <input type="email"
+                               class="form-control mb-3"
+                               placeholder="Seu e-mail">
+
+                        <textarea
+                            class="form-control mb-3"
+                            rows="5"
+                            placeholder="Digite sua mensagem">
+                        </textarea>
+
+                        <button class="btn btn-primary">
+                            Enviar Mensagem
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mapa">
+
+            <h3>Localização</h3>
+
+            <iframe
+                src="https://maps.google.com/maps?q=Luiziana%20PR&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="350"
+                style="border:0;"
+                loading="lazy">
+            </iframe>
 
         </div>
 
     </div>
 
-</nav>
-
-<div class="text-center">
-
-<h1>Entre em contato conosco</h1>
-
-</div>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
+<footer class="bg-dark text-white text-center p-4">
+
+    <p>
+        © 2026 Adalto CELL - Todos os direitos reservados
+    </p>
+
+</footer>
 
 </body>
 </html>
