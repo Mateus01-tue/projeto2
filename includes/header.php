@@ -40,20 +40,19 @@
 
             </ul>
 
-            <form action="index.php" method="GET" class="d-flex">
+        <?php if (basename($_SERVER['PHP_SELF']) == 'index.php') { ?>
+                
+                <form action="index.php" method="GET" class="d-flex">
+                    <input class="form-control me-2"
+                           type="search"
+                           name="busca"
+                           placeholder="Pesquisar">
+                    <button type="submit" class="btn btn-dark">
+                        Buscar
+                    </button>
+                </form>
 
-            <input
-                class="form-control me-2"
-                type="search"
-                name="busca"
-                placeholder="Pesquisar">
-
-            <button type="submit" class="btn btn-dark">
-                Buscar
-            </button>
-
-        </form>
-
+            <?php } ?>
         </div>
 
     </div>

@@ -1,7 +1,7 @@
 <?php
 
-$conexao = mysqli_connect("localhost", "root", "", "adaltocell");
+$conexao = mysqli_connect("192.168.56.101", "root", "", "adaltocell");
 
 if (!$conexao) {
-    die("Erro: " . mysqli_connect_error());
+    die("Erro ao conectar na Máquina Virtual: " . mysqli_connect_error());
 }
