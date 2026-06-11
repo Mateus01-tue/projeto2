@@ -1,41 +1,62 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adalto Cell</title>
-</head>
-<body>
+<?php
+
+include 'conexao.php';
+
+$busca = "";
+
+if(isset($_GET['busca']))
+{
+    $busca = $_GET['busca'];
+}
+
+$sql = "SELECT * FROM produtos";
+
+if($busca != "")
+{
+    $sql .= " WHERE nome LIKE '%$busca%'";
+}
+
+$resultado = mysqli_query($conexao, $sql);
+
+if($busca != "")
+{
+    echo "<h3 class='text-center mt-4'>Resultado da busca: $busca</h3>";
+}
+?>
 
 <section class="cardss">
 
-    <div class="container">
+```
+<div class="container">
 
-        <h2 class="text-center">
-            Celulares em Destaque
-        </h2>
+    <div class="row">
 
-        <div class="row">
+        <?php while($produto = mysqli_fetch_assoc($resultado)) { ?>
 
-            <!-- Produto 1 -->
-            <div class="col-md-3">
+            <div class="col-md-3 mb-4">
 
-                <div class="card">
+                <div class="card h-100">
 
-                    <img src="imagens/s25.png"
+                    <img src="imagens/<?php echo $produto['imagem']; ?>"
                          class="produto-img"
-                         alt="Samsung S25">
+                         alt="<?php echo $produto['nome']; ?>">
 
                     <div class="card-body text-center">
 
-                        <h5>Samsung S25</h5>
+                        <h5>
+                            <?php echo $produto['nome']; ?>
+                        </h5>
 
-                        <p>256GB • 12GB RAM</p>
+                        <p>
+                            R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?>
+                        </p>
 
-                        <a href="SamsungS25.php" class="btn btn-dark">
-                        Ver Produto
-                          
-                    </a>
+                        <a href="produto.php?id=<?php echo $produto['id']; ?>"
+                           class="btn btn-dark">
+
+                           Ver Produto
+
+                        </a>
 
                     </div>
 
@@ -43,210 +64,11 @@
 
             </div>
 
-            <!-- Produto 2 -->
-            <div class="col-md-3">
-
-                <div class="card">
-
-                    <img src="imagens/iphone14.png"
-                         class="produto-img"
-                         alt="iPhone 14">
-
-                    <div class="card-body text-center">
-
-                        <h5>iPhone 14</h5>
-
-                        <p>128GB • iOS</p>
-
-                        <a href="produtos.php" class="btn btn-dark">
-                        Ver Produto
-                          
-                    </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Produto 3 -->
-            <div class="col-md-3">
-
-                <div class="card">
-
-                    <img src="imagens/motorola.png"
-                         class="produto-img"
-                         alt="Motorola">
-
-                    <div class="card-body text-center">
-
-                        <h5>Motorola Edge</h5>
-
-                        <p>256GB • Android</p>
-
-                        <a href="motorola.php" class="btn btn-dark">
-                        Ver Produto
-                          
-                    </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Produto 4 -->
-            <div class="col-md-3">
-
-                <div class="card">
-
-                    <img src="imagens/xiaomi.png"
-                         class="produto-img"
-                         alt="Xiaomi">
-
-                    <div class="card-body text-center">
-
-                        <h5>Xiaomi Redmi</h5>
-
-                        <p>256GB • 8GB RAM</p>
-
-                        <a href="xiaomi.php" class="btn btn-dark">
-                        Ver Produto
-                          
-                    </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
+        <?php } ?>
 
     </div>
 
+</div>
+```
 
 </section>
-
-<section>
-
-    <div class="container">
-
-        <h2 class="text-center">
-            Acessórios e Tecnologia
-        </h2>
-
-        <div class="row mt-4">
-
-            <!-- Produto 5 -->
-            <div class="col-md-3">
-
-                <div class="card">
-
-                    <img src="imagens/tv.png"
-                         class="produto-img"
-                         alt="Smart TV">
-
-                    <div class="card-body text-center">
-
-                        <h5>Smart TV</h5>
-
-                        <p>50 Polegadas • 4K</p>
-
-                        <a href="tv.php" class="btn btn-dark">
-                        Ver Produto
-                          
-                    </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Produto 6 -->
-            <div class="col-md-3">
-
-                <div class="card">
-
-                    <img src="imagens/fone.png"
-                         class="produto-img"
-                         alt="Fone Bluetooth">
-
-                    <div class="card-body text-center">
-
-                        <h5>Fone Bluetooth</h5>
-
-                        <p>Sem fio • Bluetooth</p>
-
-                        <a href="fones.php" class="btn btn-dark">
-                        Ver Produto
-                          
-                    </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Produto 7 -->
-            <div class="col-md-3">
-
-                <div class="card">
-
-                    <img src="imagens/teclado.png"
-                         class="produto-img"
-                         alt="Teclado Gamer">
-
-                    <div class="card-body text-center">
-
-                        <h5>Teclado Gamer</h5>
-
-                        <p>RGB • Mecânico</p>
-
-                        <a href="teclado.php" class="btn btn-dark">
-                        Ver Produto
-                          
-                    </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Produto 8 -->
-            <div class="col-md-3">
-
-                <div class="card">
-
-                    <img src="imagens/caixa.png"
-                         class="produto-img"
-                         alt="Caixa de Som">
-
-                    <div class="card-body text-center">
-
-                        <h5>Caixa JBL</h5>
-
-                        <p>Bluetooth • Portátil</p>
-
-                        <a href="jbl.php" class="btn btn-dark">
-                        Ver Produto
-                          
-                    </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-    
-</body>
-</html>

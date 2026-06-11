@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adalto Cell</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     
     <link rel="stylesheet" href="style.css?v=1">
-</head>
-<body>
 
 <nav class="navbar navbar-expand-lg bg-white border-bottom">
 
@@ -48,23 +40,22 @@
 
             </ul>
 
-            <form class="d-flex">
+            <form action="index.php" method="GET" class="d-flex">
 
-                <input class="form-control me-2"
-                       type="search"
-                       placeholder="Pesquisar">
+            <input
+                class="form-control me-2"
+                type="search"
+                name="busca"
+                placeholder="Pesquisar">
 
-                <button class="btn btn-dark">
-                    Buscar
-                </button>
+            <button type="submit" class="btn btn-dark">
+                Buscar
+            </button>
 
-            </form>
+        </form>
 
         </div>
 
     </div>
 
 </nav>
-    
-</body>
-</html>
