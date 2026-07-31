@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
 body{
+    font-family: 'Inter', sans-serif;
     background: linear-gradient(to right, #001133, #000814);
     color: white;
     min-height: 100vh;
@@ -9,6 +12,8 @@ body{
 }
 
 .titulo{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
     text-align: center;
     font-size: 3rem;
     margin-bottom: 10px;
@@ -32,8 +37,20 @@ body{
 
 .info-box h3,
 .form-box h3{
+    font-family: 'Space Grotesk', sans-serif;
     margin-bottom: 20px;
-    color: #0d6efd;
+    color: #0090c0;
+}
+
+.form-box .btn-primary{
+    background-color: #00c2ff;
+    border-color: #00c2ff;
+    color: #001a30;
+    font-weight: 600;
+}
+.form-box .btn-primary:hover{
+    background-color: #00a3dd;
+    border-color: #00a3dd;
 }
 
 .mapa{
