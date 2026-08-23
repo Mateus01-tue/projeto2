@@ -32,7 +32,7 @@ h2{
     gap: 12px;
 }
 
-/* Assinatura visual: barras de sinal antes dos títulos de seção */
+
 h2::before{
     content: "";
     display: inline-block;
@@ -46,7 +46,7 @@ h2::before{
     opacity: 0.9;
 }
 
-/* ---------- Banner / Hero ---------- */
+
 .banner{
     position: relative;
     overflow: hidden;
@@ -64,7 +64,7 @@ h2::before{
     pointer-events: none;
 }
 
-/* ---------- Filtro de categorias ---------- */
+
 .btn-group .btn-outline-dark{
     color: var(--text-light);
     border-color: var(--accent-cyan-dim);
@@ -82,7 +82,7 @@ h2::before{
     box-shadow: 0 0 18px var(--accent-cyan-dim);
 }
 
-/* ---------- Cards de produto ---------- */
+
 .cardss{
     padding: 40px 0;
 }
@@ -126,7 +126,7 @@ h2::before{
     color: #0a1c2e;
 }
 
-/* Preço em destaque (aplica-se a elementos com classe .preco, se existir) */
+
 .preco,
 .card .text-success{
     font-family: 'Space Grotesk', sans-serif;
@@ -168,4 +168,9 @@ h2::before{
 footer{
     background: var(--bg-deep) !important;
     border-top: 1px solid rgba(0,194,255,0.15);
+}
+
+.card h5,
+.card .list-group-item{
+    color: #1a2b3c;
 }

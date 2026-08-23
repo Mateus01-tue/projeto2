@@ -1,5 +1,4 @@
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     
     <link rel="stylesheet" href="style.css?v=1">
@@ -36,6 +35,10 @@
 
                 <li class="nav-item">
                     <a class="nav-link" href="contato.php">Contato</a>
+                </li>
+
+                <li class="nav-item ms-lg-2">
+                    <a class="btn btn-primary btn-sm" href="dashboard.php">📊 Dashboard</a>
                 </li>
 
             </ul>
